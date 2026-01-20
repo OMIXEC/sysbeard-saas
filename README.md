@@ -2,13 +2,11 @@
 
 # ✂️ Sysbeard SaaS
 
-### The Ultimate Open-Source Barber Management & Analytics Suite
+**Open-source barber management & analytics suite.** Scheduling, dashboards, payments, and messaging — built with React + Firebase.
 
-**The professional command center for barbershops. Scalable, data-driven, and built for growth.**
-
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/omixec/sysbeard-saas/releases)
-[![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
-[![Firebase](https://img.shields.io/badge/Firebase-10.12-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![Version](https://img.shields.io/github/package-json/v/omixec/sysbeard-saas?label=version)](package.json)
+[![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![Firebase](https://img.shields.io/badge/Firebase-10.x-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![Stripe](https://img.shields.io/badge/Stripe-Payments-635BFF?logo=stripe&logoColor=white)](https://stripe.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -16,162 +14,211 @@
 
 </div>
 
----
+## 📌 Overview
 
-## 📖 About Sysbeard
+Sysbeard is a full-stack SaaS platform designed to modernize barbershop operations. It goes beyond bookings with business intelligence, automated workflows, and a premium client experience.
 
-**Sysbeard** is a high-performance SaaS platform designed to transform barbershop operations. It moves beyond simple booking by providing shop owners with deep business intelligence, automated workflows, and a premium customer experience.
+## ✨ Features
 
-By combining the "System" with the "Beard," we provide an all-in-one ecosystem for appointment scheduling, financial tracking, and staff management—allowing barbers to focus on their craft while the software handles the business.
+- **Smart scheduling:** multi-barber support, slotting, and buffers.
+- **Analytics dashboards:** revenue tracking, KPIs, and performance insights.
+- **Stripe payments:** deposits, full payments, and tips.
+- **Messaging & notifications:** in-app messaging and email automation.
+- **Themes & i18n:** DaisyUI themes + multi-language support (incl. RTL).
 
----
+## 📚 Project docs
 
-## 📸 visual Tour
+- `CHANGELOG.md` — notable changes + roadmap (including upcoming work).
 
-<div align="center">
+## 🖼️ Screenshots
 
-### 📊 Business Intelligence Dashboard
+<details>
+  <summary>Open screenshots</summary>
 
-<img src="docs/screenshots/bb-analytics.png" width="850" alt="Sysbeard Analytics Dashboard"/>
-<p><i>Monitor your growth with real-time revenue charts, booking velocity, and performance KPIs.</i></p>
+  <div align="center">
 
-### 🗓️ Management Views
+  ### 📊 Business Intelligence Dashboard
 
-<table>
-  <tr>
-    <td width="50%"><img src="docs/screenshots/bb-calendar-month.png" alt="Month View"/><br/><b>Monthly Overview</b></td>
-    <td width="50%"><img src="docs/screenshots/bb-calendar-day.png" alt="Day View"/><br/><b>Daily Breakdown</b></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/screenshots/bb-bookings-table.png" width="400" alt="Table View"/><br/><b>Detailed Booking Table</b></td>
-    <td align="center"><img src="docs/screenshots/bb-booking-cards.png" width="400" alt="Card View"/><br/><b>Card-based Management</b></td>
-  </tr>
-</table>
+  <img src="docs/screenshots/bb-analytics.png" width="850" alt="Sysbeard analytics dashboard" />
 
-### 💬 Communication & UI
+  ### 🗓️ Management Views
 
-<table>
-  <tr>
-    <td align="center"><img src="docs/screenshots/bb-barber-chat.png" width="400" alt="Chat"/><br/><b>Client Messaging</b></td>
-    <td align="center"><img src="docs/screenshots/bb-booking-dark.png" width="400" alt="Dark Mode"/><br/><b>Luxury Dark Theme</b></td>
-  </tr>
-</table>
+  <table>
+    <tr>
+      <td width="50%"><img src="docs/screenshots/bb-calendar-month.png" alt="Calendar month view" /><br/><b>Monthly Overview</b></td>
+      <td width="50%"><img src="docs/screenshots/bb-calendar-day.png" alt="Calendar day view" /><br/><b>Daily Breakdown</b></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="docs/screenshots/bb-bookings-table.png" width="400" alt="Bookings table view" /><br/><b>Detailed Booking Table</b></td>
+      <td align="center"><img src="docs/screenshots/bb-booking-cards.png" width="400" alt="Bookings card view" /><br/><b>Card-based Management</b></td>
+    </tr>
+  </table>
 
-</div>
+  ### 💬 Communication & UI
 
----
+  <table>
+    <tr>
+      <td align="center"><img src="docs/screenshots/bb-barber-chat.png" width="400" alt="Client messaging" /><br/><b>Client Messaging</b></td>
+      <td align="center"><img src="docs/screenshots/bb-booking-dark.png" width="400" alt="Luxury dark theme" /><br/><b>Luxury Dark Theme</b></td>
+    </tr>
+  </table>
 
-## ⚡ Key Features
+  </div>
+</details>
 
-- **Smart Scheduling:** Multi-barber support with intelligent slotting and buffer times.
-- **Deep Analytics:** Revenue tracking, customer retention rates, and peak-hour heatmaps.
-- **Stripe Integrated:** Handle secure deposits, full payments, and tips effortlessly.
-- **Multilingual:** Full support for English, German, Turkish, and Arabic (RTL).
-- **Staff Performance:** Individual barber profiles with rating systems and commission tracking.
-- **Omnichannel Notifications:** Email and in-app alerts powered by Mailgun and Firebase.
+## 🧱 Tech Stack
 
----
+| Layer | Technologies |
+| --- | --- |
+| **Frontend** | React, TailwindCSS, DaisyUI, Framer Motion |
+| **State** | Zustand |
+| **Backend** | Firebase Cloud Functions (Node.js) |
+| **Database** | Cloud Firestore |
+| **Payments** | Stripe |
+| **Charts** | Recharts, Tremor |
 
-## 🛠️ Technical Stack
+## 🚀 Getting Started
 
-| Layer        | Technologies                                  |
-| :----------- | :-------------------------------------------- |
-| **Frontend** | React 18, TailwindCSS, Framer Motion, DaisyUI |
-| **Backend**  | Firebase Cloud Functions (Node.js)            |
-| **Database** | Cloud Firestore                               |
-| **State**    | Zustand                                       |
-| **Payments** | Stripe API                                    |
-| **Charts**   | Recharts & Tremor                             |
+### Prerequisites
 
----
+- Node.js `>= 18` (frontend) and Node.js `20` (functions)
+- Firebase project (Firestore + Auth) and Firebase CLI (`firebase`)
+- Stripe account (optional for local UI-only work)
+- Mailgun account (optional, used for email delivery via functions)
 
-## 🚀 Installation & Setup
-
-### Quick Start
-
-Prerequisites
-Node.js 18+
-Firebase project
-Stripe account (for payments)
-Mailgun account (for emails)
-
-### 1. Clone & Install
+### Install
 
 ```bash
-git clone [https://github.com/omixec/sysbeard-saas.git](https://github.com/omixec/sysbeard-saas.git)
+git clone https://github.com/omixec/sysbeard-saas.git
 cd sysbeard-saas
+
 npm install
-cd functions && npm install && cd ..
+npm --prefix functions install
+```
 
-# 2. Environment Setup
+### Environment variables
+
+Copy and edit:
+
+```bash
 cp .env.example .env
-Fill in your .env:
+```
 
+Common variables used by the frontend:
+
+```bash
 REACT_APP_FIREBASE_API_KEY=your_key
 REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
 REACT_APP_FIREBASE_PROJECT_ID=your_project
 REACT_APP_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=123456789
 REACT_APP_FIREBASE_APP_ID=your_app_id
+REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id_optional
+
 REACT_APP_STRIPE_PUBLISHABLE_KEY=pk_test_xxx
+REACT_APP_CLOUD_FUNCTIONS_URL=https://us-central1-your_project.cloudfunctions.net
+
+# Optional (only needed for some screens)
 REACT_APP_GOOGLE_MAPS_API_KEY=your_maps_key
-3. Firebase Functions Config
-firebase functions:config:set mailgun.key="your_key" mailgun.domain="your_domain"
-# 4. Run
-npm start
-Open http://localhost:3000 🎉
-
-# Demo Mode
-Sysbeard includes a complete demo data system for testing and screenshots.
-
-### Seed Demo Data
-# Download serviceAccountKey.json from Firebase Console first
-npm run seed        # Populate with demo data
-npm run seed:clean  # Remove demo data
-Demo Accounts
-Role	Email	Password
-Shop Owner	demo-owner@barbersbuddies.com	DemoOwner2026!
-Customer	demo-customer@barbersbuddies.com	DemoCustomer2026!
-The demo includes: 12 barbershops, 200+ bookings, 100+ ratings, message threads, and notifications.
-
-#  Tech Stack
-Layer	Technology
-Frontend	React 18, TailwindCSS, DaisyUI, Framer Motion
-Backend	Firebase Functions (Node.js)
-Database	Firestore
-Auth	Firebase Authentication
-Payments	Stripe
-Email	Mailgun
-Storage	Firebase Storage
-Maps	Google Maps API
-State	Zustand
-Charts	Recharts, Tremor
-📁 Project Structure
-BarbersBuddies/
-├── src/
-│   ├── components/     # React components
-│   ├── Services/       # API services (Stripe, etc.)
-│   ├── utils/          # Helpers (sanitize, logger)
-│   ├── hooks/          # Custom React hooks
-│   └── store.js        # Zustand state management
-├── functions/          # Firebase Cloud Functions
-├── scripts/
-│   └── seed/           # Demo data seeding system
-├── public/             # Static assets
-└── docs/
-    └── screenshots/    # App screenshots
-
-# Contributing
-Contributions are welcome!
-
-Fork the repo
-Create your branch (git checkout -b feature/awesome-feature)
-Commit changes (git commit -m 'Add awesome feature')
-Push (git push origin feature/awesome-feature)
-Open a Pull Request
-
-# License
-MIT License - see LICENSE for details.
-
-
+REACT_APP_GOOGLE_CLIENT_ID=your_google_oauth_client_id
 ```
+
+### Configure Mailgun (Cloud Functions)
+
+```bash
+firebase functions:config:set mailgun.key="your_key" mailgun.domain="your_domain"
+```
+
+If you deploy to a different domain, update the CORS allowlist in `functions/index.js`.
+
+### Run locally
+
+Frontend:
+
+```bash
+npm start
+```
+
+Functions emulator (separate terminal):
+
+```bash
+npm --prefix functions run serve
+```
+
+## 🌱 Demo data (optional)
+
+Sysbeard includes a demo data seeding system for testing and screenshots.
+
+1. Download `serviceAccountKey.json` from Firebase Console → Project Settings → Service Accounts
+2. Put it in the project root (never commit it)
+3. Run:
+
+```bash
+npm run seed        # Populate Firestore with demo data
+npm run seed:clean  # Remove demo data
+```
+
+Demo accounts created by the seed script:
+
+| Role | Email | Password |
+| --- | --- | --- |
+| Shop Owner | `demo-owner@barbersbuddies.com` | `DemoOwner2026!` |
+| Customer | `demo-customer@barbersbuddies.com` | `DemoCustomer2026!` |
+
+## 📦 Deployment
+
+Frontend (Firebase Hosting):
+
+```bash
+npm run build
+firebase deploy --only hosting
+```
+
+Cloud Functions:
+
+```bash
+npm --prefix functions run deploy
+```
+
+Firestore rules:
+
+```bash
+firebase deploy --only firestore:rules
+```
+
+## 🎨 UI/UX roadmap (in progress)
+
+This section is a living checklist for upcoming UX + UI improvements.
+
+### Phase 1 — Foundations
+
+- [ ] Define a small set of design tokens (spacing, typography, radii) and apply across core components
+- [ ] Standardize form inputs, buttons, and modal patterns (focus states + validation)
+- [ ] Improve dark theme contrast and readability (WCAG-focused pass)
+- [ ] Add consistent empty states and loading skeletons for data-heavy screens
+
+### Phase 2 — Core flows
+
+- [ ] Booking flow polish: clearer steps, better time-slot selection, and inline validation
+- [ ] Dashboard IA cleanup: hierarchy, filters, and “at a glance” KPIs
+- [ ] Messaging UX: unread states, faster thread navigation, better composer ergonomics
+- [ ] Settings re-org: shop settings vs account settings, clearer defaults
+
+### Phase 3 — Accessibility + responsiveness
+
+- [ ] Keyboard navigation pass (modals, menus, tables) + visible focus rings
+- [ ] RTL regression pass (Arabic) and layout consistency across breakpoints
+- [ ] Mobile/tablet improvements for calendar + booking management views
+- [ ] Performance polish for long lists (virtualization where needed)
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create your branch: `git checkout -b feature/awesome-feature`
+3. Commit changes: `git commit -m "Add awesome feature"`
+4. Push: `git push origin feature/awesome-feature`
+5. Open a Pull Request
+
+## 📄 License
+
+MIT — see `LICENSE`.
